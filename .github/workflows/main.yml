@@ -1,4 +1,4 @@
-name: Ayush
+name: RDP
 
 on:
   workflow_dispatch:
@@ -12,8 +12,7 @@ jobs:
     steps:
       - name: Downloading & Installing
         run: |
-          Invoke-WebRequest -Uri "http://example.com/Downloads.bat" -OutFile "Downloads.bat"
-          cmd /c Downloads.bat
+          https://raw.githubusercontent.com/AyushDevTools/AutoSetup/main/Downloads.bat
 
       - name: Show Website
         run: cmd /c show.bat
